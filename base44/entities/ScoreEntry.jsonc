@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "properties": {
+    "subject_name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Quiz",
+        "Test",
+        "Mock/Practice Exam",
+        "FRQ Practice"
+      ]
+    },
+    "raw_score": {
+      "type": "number"
+    },
+    "max_score": {
+      "type": "number"
+    },
+    "estimated_AP_score": {
+      "type": "number",
+      "description": "Student-entered estimated AP score, 1-5"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "subject_name",
+    "type"
+  ],
+  "name": "ScoreEntry"
+}

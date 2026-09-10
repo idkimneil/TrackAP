@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "properties": {
+    "subject_name": {
+      "type": "string"
+    },
+    "grading_period": {
+      "type": "string",
+      "description": "e.g. Q1, Midterm, Q2"
+    },
+    "grade": {
+      "type": "string",
+      "description": "Letter grade or percentage"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "subject_name",
+    "grading_period"
+  ],
+  "name": "ClassGradeEntry"
+}

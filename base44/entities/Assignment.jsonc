@@ -1,0 +1,48 @@
+{
+  "type": "object",
+  "properties": {
+    "subject_name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Lab",
+        "DBQ/FRQ Practice",
+        "Essay",
+        "Project",
+        "Reading",
+        "Other"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Not Started",
+        "Draft",
+        "Awaiting Feedback",
+        "Revising",
+        "Done"
+      ]
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "file_url": {
+      "type": "string",
+      "description": "Attached draft/report file"
+    }
+  },
+  "required": [
+    "subject_name",
+    "title"
+  ],
+  "name": "Assignment"
+}

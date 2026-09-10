@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "AP course name, e.g. AP US History"
+    },
+    "exam_date": {
+      "type": "string",
+      "format": "date",
+      "description": "May exam date"
+    },
+    "target_score": {
+      "type": "number",
+      "description": "Target AP score, 1-5"
+    },
+    "class_grade_target": {
+      "type": "string",
+      "description": "Target letter grade or GPA"
+    },
+    "current_predicted_score": {
+      "type": "number",
+      "description": "Editable current predicted AP score, 1-5"
+    }
+  },
+  "required": [
+    "name"
+  ],
+  "name": "Subject"
+}

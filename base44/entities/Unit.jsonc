@@ -1,0 +1,30 @@
+{
+  "type": "object",
+  "properties": {
+    "subject_name": {
+      "type": "string",
+      "description": "Name of the parent subject"
+    },
+    "title": {
+      "type": "string"
+    },
+    "confidence_status": {
+      "type": "string",
+      "enum": [
+        "Confident",
+        "Average",
+        "Needs Practice",
+        "Not Learnt"
+      ]
+    },
+    "flagged_for_revision": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "subject_name",
+    "title"
+  ],
+  "name": "Unit"
+}

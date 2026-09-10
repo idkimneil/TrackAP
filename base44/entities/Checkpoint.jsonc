@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "assignment_title": {
+      "type": "string",
+      "description": "Title of the parent assignment"
+    },
+    "subject_name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "due_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "done": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "name": "Checkpoint"
+}

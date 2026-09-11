@@ -14,6 +14,7 @@ import Register from './pages/Register';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import OAuthConsent from './pages/OAuthConsent';
+import { Analytics } from '@vercel/analytics/react';
 // Add page imports here
 
 const AuthenticatedApp = () => {
@@ -62,6 +63,7 @@ function App() {
           <AuthenticatedApp />
         </Router>
         <Toaster />
+        <Analytics />
       </QueryClientProvider>
     </AuthProvider>
   )
